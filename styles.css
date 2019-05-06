@@ -1,0 +1,162 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f0efea;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    position: relative;
+    margin: 100px auto;
+    width: 350px;
+    padding: 50px 30px 80px;
+    box-shadow: 0 0 25px 0 lightgrey;
+    background: white;
+    color: #5b5c60;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date-wrapper {
+    display: flex;
+}
+
+.number {
+    padding-right: 5px;
+    font-size: 30px;
+}
+
+.month, .year, .day {
+    font-size: 10px;
+}
+
+.month-year-wrapper {
+    padding-top: 5px;
+}
+
+.month {
+    padding-bottom: 3px; 
+}
+
+.number, .month, .day {
+    font-weight: 700;
+}
+
+.form {
+    position: relative;
+}
+
+.form input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: none;
+    background: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+.form-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.title {
+    color: #5b5c60;
+}
+
+.checkbox:checked ~ .title {
+    color: #e2e2e4;
+}
+
+.fa-circle {
+    display: block;
+    color: #e2e2e4;
+    font-size: 2rem;
+}
+
+.fab-checked {
+    display: none;
+}
+
+.checkbox:checked ~ .fa-circle {
+    display: none;
+}
+
+.checkbox:checked ~ .fab-checked {
+    display: block;
+    color: #6df1c0;
+    font-size: 2rem;
+} 
+
+.button {
+    position: absolute;
+    bottom: -40px;
+    right: calc(50% - 40px);
+
+    width: 80px;
+    height: 80px;
+    background: #6df1c0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.button:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -1px;
+    margin-left: -10px;
+
+    width: 20px;
+    height: 2px;
+
+    background-color: #55bd85;
+}
+
+.button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: calc(50% - 1px);
+    top: calc(50% - 10px);
+    /* margin-top: -10px; */
+    /* margin-left: -1px; */
+
+    height: 20px;
+    width: 2px;
+    
+    background-color: #55bd85;
+}
+
+input.field-new-item {
+    margin: 20px 0;
+    width: 100;
+    height: 25px;
+    display: block;
+    border: 3px solid #6df1c0;
+    border-radius: 15px;
+}
+
